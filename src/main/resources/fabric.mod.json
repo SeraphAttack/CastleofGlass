@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "castleofglass",
+	"version": "${version}",
+	"name": "Castle of Glass",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"SeraphAttack"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/castleofglass/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.seraph.castleofglass.CastleOfGlass"
+		],
+		"fabric-datagen": [
+			"net.seraph.castleofglass.CastleOfGlassDataGenerator"
+		],
+        "client": [
+            "net.seraph.castleofglass.CastleofGlassClient"
+        ]
+	},
+	"mixins": [
+		"castleofglass.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
